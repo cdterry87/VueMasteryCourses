@@ -5,6 +5,7 @@ var app = new Vue({
         description: 'These are the most comfortable socks!',
         image: './assets/greensocks.jpeg',
         inventory: 100,
+        inStock: false,
         onSale: false,
         details: [
             "80% cotton",
