@@ -14,11 +14,13 @@ var app = new Vue({
         variants: [
             {
                 variantId: 1234,
-                variantColor: "green"
+                variantColor: "green",
+                variantImage: './assets/greensocks.jpeg'
             },
             {
                 variantId: 5678,
-                variantColor: "blue"
+                variantColor: "blue",
+                variantImage: './assets/bluesocks.jpeg'
             }
         ],
         sizes: [
@@ -34,6 +36,20 @@ var app = new Vue({
                 sizeId: 789,
                 sizeDescription: "Large",
             }
-        ]
+        ],
+        cart: 0
+    },
+    methods: {
+        addToCart: function () {
+            this.cart++;
+        },
+        removeFromCart: function () {
+            if (this.cart > 0) {
+                this.cart--;
+            }
+        },
+        updateProduct: function (variantImage) {
+            this.image = variantImage
+        }
     }
 });
