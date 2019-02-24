@@ -1,10 +1,13 @@
 <template>
-    <h1>Events Listing</h1>
+    <div>
+        <h1>Events Listing</h1>
+        <router-link :to="{ name: 'event-show', params: { id: 1 }}">Show Event</router-link>
+    </div>
 </template>
 
 <script>
 export default {
-
+    name: 'EventList'
 }
 </script>
 
