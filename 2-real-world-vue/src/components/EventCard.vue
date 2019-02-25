@@ -10,21 +10,7 @@
 
 <script>
     export default {
-        data() {
-            return {
-                event: {
-                    id: 1,
-                    title: 'Beach Cleanup',
-                    date: 'Tues Aug 19, 2019',
-                    time: '6:00',
-                    attendees: [
-                        { id: 'abc123', name: 'Chase Terry' },
-                        { id: 'def456', name: 'Adam Jahr' },
-                        { id: 'ghi789', name: 'Greg Pollack' },
-                    ]
-                }
-            }
-        },
+       props: ['event']
     }
 </script>
 
